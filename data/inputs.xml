@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<modded_inputs>
+    <inputs>
+        <actions>
+            <input name="AR_BancoAvanzado" loc="AdminMenu" />
+        </actions>
+    </inputs>
+    <preset>
+        <input name="AR_BancoAvanzado">
+            <btn name="kB" />
+        </input>
+    </preset>
+</modded_inputs>

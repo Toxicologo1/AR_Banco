@@ -1,0 +1,1287 @@
+FrameWidgetClass MainRoot {
+ visible 1
+ size 0.99967 1
+ halign center_ref
+ valign center_ref
+ hexactpos 0
+ vexactpos 0
+ hexactsize 0
+ vexactsize 0
+ {
+  PanelWidgetClass BankingMenuBody {
+   visible 1
+   ignorepointer 1
+   size 0.47693 0.76292
+   halign center_ref
+   valign center_ref
+   hexactpos 0
+   vexactpos 0
+   hexactsize 0
+   vexactsize 0
+   style rover_sim_black
+   {
+    PanelWidgetClass Header {
+     ignorepointer 1
+     position 0.00001 0
+     size 0.99917 0.08414
+     halign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_blackbox
+     {
+      TextWidgetClass TextWidget0 {
+       ignorepointer 1
+       position -0.00433 0
+       size 0.31926 0.99593
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "BANKING"
+       font "gui/fonts/metron-italic58"
+       "text halign" center
+       "text valign" center
+      }
+      ImageWidgetClass CloseWidget {
+       ignorepointer 1
+       position 0.00846 0.08474
+       size 0.04116 0.51666
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       imageTexture "{E09E82AC9FAC2178}AR_Banco/GUI/textures/CloseIcon.edds"
+       mode blend
+       "src alpha" 1
+       stretch 1
+      }
+      ButtonWidgetClass CloseInvi {
+       position 0.00689 0.08181
+       size 0.04446 0.5456
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Empty
+      }
+     }
+    }
+    PanelWidgetClass PanelTabControl {
+     visible 1
+     ignorepointer 1
+     color 0.2275 0.2275 0.2275 1
+     position 0.00004 0.08408
+     size 1.00011 0.05677
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style rover_sim_colorable
+     {
+      ButtonWidgetClass BtnTabBank {
+       visible 1
+       color 0.5608 0.0706 0.0706 1
+       position 0.00063 0
+       size 0.36058 1.0129
+       halign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "#AB_BankAccount"
+      }
+      ButtonWidgetClass BtnTabClanBank {
+       color 0.5608 0.0706 0.0706 1
+       size 0.32171 1.0129
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "#AB_ClanAccount"
+      }
+      ButtonWidgetClass BtnTabTransfer {
+       visible 1
+       color 0.5608 0.0706 0.0706 1
+       size 0.32303 1.02316
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Editor
+       text "#AB_PlayerTransferBtn"
+      }
+     }
+    }
+    PanelWidgetClass PanelBankAcc {
+     visible 1
+     ignorepointer 1
+     position 0.00003 0.14132
+     size 0.99935 0.85878
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      PanelWidgetClass PDABody {
+       visible 1
+       ignorepointer 1
+       position 0 -0.02171
+       size 0.5966 0.7863
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass PanelBankAmount {
+         ignorepointer 1
+         position 0.00024 0.07187
+         size 0.99988 0.09612
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass ImageWidget0 {
+           ignorepointer 1
+           position 0.00946 0.05052
+           size 0.08899 0.73512
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           imageTexture "{7AB473DF73D521A2}AR_Banco/GUI/textures/BankLogo.edds"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          TextWidgetClass BankAmountValueText {
+           ignorepointer 1
+           position 0.05128 0.00368
+           size 0.89606 1.00135
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text " [KGB] Sample Value"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass PanelCashAmount {
+         ignorepointer 1
+         position 0.00056 0.19011
+         size 0.99988 0.09612
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass ImageCashIcon {
+           ignorepointer 1
+           position 0.00881 0.08695
+           size 0.08907 0.63594
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           imageTexture "{3246EACF47D2E247}AR_Banco/GUI/textures/CashIcon.edds"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          TextWidgetClass TextCashOnPlayer {
+           ignorepointer 1
+           position 0.05128 0.00368
+           size 0.89606 1.00135
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text " [KGB] Sample Value"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass PanelInteract {
+         ignorepointer 1
+         position -0.0004 0.31956
+         size 0.99993 0.10913
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          EditBoxWidgetClass EditBoxWidget0 {
+           color 0.502 0 0 1
+           position 0.00147 0.12675
+           size 0.99931 0.73141
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Editor
+           font "gui/fonts/metron48"
+          }
+         }
+        }
+        PanelWidgetClass PanelBankAmount0 {
+         ignorepointer 1
+         position -0.00069 0.45341
+         size 0.99988 0.09612
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ButtonWidgetClass btnWithdraw {
+           color 0.502 0 0 1
+           position 0 -0.00394
+           size 0.41659 0.98413
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_WITHDRAW"
+           font "gui/fonts/metron-bold22"
+          }
+          ButtonWidgetClass btnWithdraw0 {
+           color 0.502 0 0 1
+           size 0.41659 0.98413
+           halign right_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "WITHDRAW"
+           font "gui/fonts/metron-bold22"
+          }
+          ButtonWidgetClass btnDeposit {
+           color 0.502 0 0 1
+           position 0 0
+           size 0.41659 0.98413
+           halign right_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_DEPOSIT"
+           font "gui/fonts/metron-bold22"
+          }
+         }
+        }
+        ProgressBarWidgetClass ProgressBarWidget0 {
+         ignorepointer 1
+         position 0 0
+         size 0.992 0.093
+         halign center_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Loading
+         {
+          TextWidgetClass TextWidgetPercentage {
+           ignorepointer 1
+           size 0.33771 0.75953
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "50%"
+           font "gui/fonts/metron-bold28"
+           "exact text" 0
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+        TextWidgetClass TextWidgetMax {
+         ignorepointer 1
+         position 0.51085 0.8528
+         size 0.4816 0.051
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "300k"
+         font "gui/fonts/metron-bold28"
+         "exact text" 0
+         "text halign" right
+         "text valign" center
+        }
+        TextWidgetClass TextWidgetCurrent {
+         ignorepointer 1
+         position 0.00634 0.85269
+         size 0.50282 0.051
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "150k"
+         font "gui/fonts/metron-bold28"
+         "exact text" 0
+         "text valign" center
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PanelClanAcc {
+     visible 0
+     ignorepointer 1
+     position 0.00003 0.14132
+     size 0.99935 0.85878
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      PanelWidgetClass PDABody0 {
+       ignorepointer 1
+       position 0.0022 -0.17403
+       size 0.57735 0.53068
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        PanelWidgetClass PanelBankAmount1 {
+         ignorepointer 1
+         position 0.00024 0.07187
+         size 0.99988 0.09612
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass ImageWidget1 {
+           ignorepointer 1
+           position 0.00964 0
+           size 0.08393 0.82461
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           imageTexture "{7AB473DF73D521A2}AR_Banco/GUI/textures/BankLogo.edds"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          TextWidgetClass BankClanAmmount {
+           ignorepointer 1
+           position 0.05128 0.00368
+           size 0.89606 1.00135
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text " [KGB] Sample Value"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass PanelCashAmount0 {
+         ignorepointer 1
+         position 0.00056 0.19011
+         size 0.99988 0.09612
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ImageWidgetClass ImageCashIcon0 {
+           ignorepointer 1
+           position 0.00848 0.04826
+           size 0.08762 0.77263
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           imageTexture "{3246EACF47D2E247}AR_Banco/GUI/textures/CashIcon.edds"
+           mode blend
+           "src alpha" 1
+           stretch 1
+          }
+          TextWidgetClass TextCashOnPlayer0 {
+           ignorepointer 1
+           position 0.05128 0.00368
+           size 0.89606 1.00135
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text " [KGB] Sample Value"
+           "text valign" center
+          }
+         }
+        }
+        PanelWidgetClass PanelInteract0 {
+         visible 1
+         ignorepointer 1
+         position -0.0004 0.31956
+         size 0.99993 0.10913
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          EditBoxWidgetClass InputBoxClan {
+           visible 1
+           color 0.502 0 0 1
+           position 0 0
+           size 0.99931 1.01429
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Editor
+           font "gui/fonts/metron48"
+          }
+         }
+        }
+        PanelWidgetClass PanelBankAmount2 {
+         ignorepointer 1
+         position -0.00069 0.45341
+         size 0.99988 0.09612
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          ButtonWidgetClass btnWithdrawClan {
+           color 0.502 0 0 1
+           position 0 -0.00394
+           size 0.41659 0.98413
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_WITHDRAW"
+           font "gui/fonts/metron-bold22"
+          }
+          ButtonWidgetClass btnDepositClan {
+           color 0.502 0 0 1
+           size 0.41659 0.98413
+           halign right_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_DEPOSIT"
+           font "gui/fonts/metron-bold22"
+          }
+         }
+        }
+        ProgressBarWidgetClass ProgressBarWidgetClan {
+         ignorepointer 1
+         position 0 0.1213
+         size 0.996 0.128
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Loading
+         {
+          TextWidgetClass TextWidgetPercentage0 {
+           ignorepointer 1
+           size 0.18692 0.68792
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "50%"
+           font "gui/fonts/metron-bold28"
+           "exact text" 0
+           "text halign" center
+           "text valign" center
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass BtnClanSettings {
+       color 0.502 0 0 1
+       size 0.32635 0.08611
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Colorable
+       text "#AB_ClanSettings"
+       font "gui/fonts/metron-bold22"
+      }
+      TextListboxWidgetClass TextListboxLogs {
+       position 0.21325 0.59238
+       size 0.57973 0.28464
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+      }
+     }
+    }
+    PanelWidgetClass PDABodyTransfer {
+     visible 0
+     disabled 0
+     ignorepointer 1
+     position 0.00954 0.05958
+     size 0.5966 0.7863
+     halign center_ref
+     valign center_ref
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      PanelWidgetClass PanelBankAmount3 {
+       ignorepointer 1
+       position 0.00279 0.00414
+       size 0.99988 0.09612
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        TextWidgetClass BankAmountValueText0 {
+         ignorepointer 1
+         position 0.05383 0.0257
+         size 0.89606 1.00135
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text " [KGB] Sample Value"
+         "text valign" center
+        }
+        ImageWidgetClass ImageWidget2 {
+         ignorepointer 1
+         position 0.00479 0.04201
+         size 0.0969 0.65274
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         imageTexture "{7AB473DF73D521A2}AR_Banco/GUI/textures/BankLogo.edds"
+         mode blend
+         "src alpha" 1
+         stretch 1
+        }
+       }
+      }
+      PanelWidgetClass PanelInteract1 {
+       ignorepointer 1
+       position -0.00277 0.7992
+       size 0.99993 0.10913
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        EditBoxWidgetClass EditBoxWidget1 {
+         color 0.502 0 0 1
+         position 0.17588 0.10932
+         size 0.63923 0.73141
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Editor
+         font "gui/fonts/metron48"
+        }
+       }
+      }
+      PanelWidgetClass PanelBankAmount4 {
+       ignorepointer 1
+       position -0.00069 0.90936
+       size 0.99988 0.09612
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ButtonWidgetClass btnSend {
+         color 0.502 0 0 1
+         size 0.61043 0.98413
+         halign center_ref
+         valign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         text "#AB_Send"
+         font "gui/fonts/metron-bold22"
+        }
+       }
+      }
+      TextListboxWidgetClass TextListboxWidget0 {
+       position 0.00691 0.10116
+       size 0.99299 0.657
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       lines 10
+      }
+      TextWidgetClass TextWidget7 {
+       ignorepointer 1
+       position 0.00378 0.81457
+       size 0.34494 0.074
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#AB_Amount"
+       font "gui/fonts/metron48"
+       "size to text h" 0
+       "size to text v" 1
+       "text halign" right
+       "text valign" center
+      }
+     }
+    }
+    PanelWidgetClass PanelYesNoMsg {
+     visible 0
+     ignorepointer 1
+     color 0.1333 0.1333 0.1333 1
+     position 0.07097 0.33885
+     size 0.85871 0.34943
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     style DayZDefaultPanel
+     {
+      PanelWidgetClass PanelWidgetClan {
+       visible 1
+       ignorepointer 1
+       position 5.84531 6.80818
+       size 0.98086 0.91461
+       hexactpos 1
+       vexactpos 1
+       hexactsize 0
+       vexactsize 0
+       {
+        MultilineTextWidgetClass TextHeadline0 {
+         ignorepointer 1
+         position 0.0952 0.01239
+         size 0.82829 0.25898
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Transfer Check"
+         font "gui/fonts/metron-bold58"
+         "size to text h" 1
+         "size to text v" 1
+         "text halign" center
+         "text valign" center
+         wrap 0
+        }
+        MultilineTextWidgetClass TextMessage0 {
+         visible 1
+         disabled 0
+         clipchildren 1
+         inheritalpha 0
+         ignorepointer 1
+         position 0.00619 0.2922
+         size 0.90442 0.48997
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         scaled 1
+         text "Are you sure you want to transfer x to x ?"
+         font "gui/fonts/metron-bold48"
+         "text halign" center
+         "text valign" center
+         wrap 1
+        }
+        PanelWidgetClass PanelWidgetmidget0 {
+         ignorepointer 1
+         color 0.502 0 0 1
+         position 0.00606 0.79125
+         size 0.98427 0.18854
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style blank
+         {
+          ButtonWidgetClass ButtonWidget2 {
+           color 0.502 0 0 1
+           position 0 0.01561
+           size 0.3576 0.97493
+           halign right_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_NO"
+           font "gui/fonts/metron-bold28"
+          }
+          ButtonWidgetClass ButtonWidget3 {
+           color 0.502 0 0 1
+           size 0.3576 0.97493
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_YES"
+           font "gui/fonts/metron-bolditalic28"
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+    PanelWidgetClass PanelClanSettings {
+     visible 0
+     ignorepointer 1
+     position 0.003 0.14508
+     size 0.99727 0.85316
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextListboxWidgetClass TextListboxPlayers {
+       position 0.53621 0.08106
+       size 0.45218 0.58792
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       lines 10
+      }
+      TextListboxWidgetClass TextListboxMember {
+       position 0.00554 0.08115
+       size 0.42252 0.57531
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       lines 10
+      }
+      TextWidgetClass TextWidget1 {
+       ignorepointer 1
+       position 0.19523 0.03709
+       size 0.09758 0.03883
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "Players"
+       font "gui/fonts/metron-bold28"
+       "exact text" 0
+       "size to text h" 1
+       "size to text v" 1
+      }
+      TextWidgetClass TextWidget2 {
+       ignorepointer 1
+       position 0.70485 0.03121
+       size 0.19163 0.04842
+       halign right_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#AB_ClanMembers"
+       font "gui/fonts/metron-bold28"
+       "exact text" 0
+       "size to text h" 1
+       "size to text v" 1
+      }
+      PanelWidgetClass PanelAdmin {
+       visible 1
+       ignorepointer 1
+       position 0.004 0.68
+       size 0.948 0.31
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        ButtonWidgetClass ButtonKick {
+         color 0.502 0 0 1
+         position 0 0
+         size 0.20538 0.18673
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         text "#AB_KICK"
+         font "gui/fonts/metron-bold28"
+        }
+        ButtonWidgetClass ButtonEdit0 {
+         color 0.502 0 0 1
+         position 0.02235 0.00104
+         size 0.33401 0.18673
+         halign right_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         text "#AB_Add"
+         font "gui/fonts/metron-bold28"
+        }
+        PanelWidgetClass PanelPerms {
+         visible 1
+         ignorepointer 1
+         position 0.2329 0.0033
+         size 0.35291 0.98387
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          CheckBoxWidgetClass CheckBoxWithdraw {
+           position 0 0
+           size 0.99592 0.12985
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#AB_CanWithdraw"
+           font "gui/fonts/metron-bold28"
+          }
+          CheckBoxWidgetClass CheckBoxDeposit {
+           position 0 0.6961
+           size 0.99491 0.14111
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#AB_CanDeposit"
+           font "gui/fonts/metron-bold28"
+          }
+          CheckBoxWidgetClass CheckBoxInvite {
+           position 0.00177 0.55371
+           size 0.99491 0.1258
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#AB_CanInviteMember"
+           font "gui/fonts/metron-bold28"
+          }
+          CheckBoxWidgetClass CheckBoxKick {
+           position 0.00177 0.39607
+           size 0.99491 0.1258
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#AB_CanKickMember"
+           font "gui/fonts/metron-bold28"
+          }
+          CheckBoxWidgetClass CheckBoxPermission {
+           position 0.00177 0.23439
+           size 0.99491 0.1258
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           scaled 1
+           text "#AB_CanEditPermissions"
+           font "gui/fonts/metron-bold28"
+          }
+          ButtonWidgetClass ButtonWidget0 {
+           color 0 0.502 0.1255 1
+           size 0.68599 0.17684
+           halign center_ref
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_Save"
+           font "gui/fonts/metron-bold48"
+          }
+         }
+        }
+        PanelWidgetClass PanelOwner {
+         visible 1
+         ignorepointer 1
+         position 0 0
+         size 0.40756 0.79901
+         halign right_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         {
+          EditBoxWidgetClass txtBoxClanName {
+           color 0.502 0 0 1
+           position -0.00289 -0.23338
+           size 0.97436 0.1468
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style DefaultBorder
+           font "gui/fonts/metron48"
+          }
+          EditBoxWidgetClass txtBoxClanTag {
+           color 0.502 0 0 1
+           position -0.00365 0.11726
+           size 0.97436 0.1468
+           halign center_ref
+           valign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style DefaultBorder
+           font "gui/fonts/metron48"
+          }
+          TextWidgetClass ClanNameText {
+           ignorepointer 1
+           size 0.14151 0.19063
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#AB_ClanName"
+           font "gui/fonts/metron-bold28"
+           "exact text" 0
+           "size to text h" 1
+           "size to text v" 1
+           "text halign" center
+           "text valign" center
+          }
+          TextWidgetClass ClanNameText0 {
+           ignorepointer 1
+           position -0.00718 0.34981
+           size 0.14151 0.19063
+           halign center_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           text "#AB_ClanTag"
+           font "gui/fonts/metron-bold28"
+           "exact text" 0
+           "size to text h" 1
+           "size to text v" 1
+           "text halign" center
+           "text valign" center
+          }
+          ButtonWidgetClass BtnSave {
+           color 0 0.502 0.1255 1
+           size 0.59154 0.21098
+           halign center_ref
+           valign bottom_ref
+           hexactpos 0
+           vexactpos 0
+           hexactsize 0
+           vexactsize 0
+           style Colorable
+           text "#AB_Save"
+           font "gui/fonts/metron-bold48"
+          }
+         }
+        }
+       }
+      }
+      ButtonWidgetClass ButtonBack {
+       color 0.502 0 0 1
+       position 0 0
+       size 0.16259 0.07665
+       valign bottom_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Colorable
+       text "#AB_Back"
+       font "gui/fonts/metron-bold48"
+      }
+      PanelWidgetClass PanelLeaveConfirm {
+       visible 0
+       ignorepointer 1
+       color 0.2118 0.2118 0.2118 1
+       size 0.67026 0.47519
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+       {
+        TextWidgetClass TextWidget5 {
+         ignorepointer 1
+         position -0.00105 0.19516
+         size 1.07176 0.12767
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Are you sure you"
+         font "gui/fonts/metron-bold48"
+         "size to text h" 1
+         "size to text v" 1
+        }
+        TextWidgetClass TextWidget6 {
+         ignorepointer 1
+         position 0.00062 0.34537
+         size 1.07176 0.14299
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "want to leave?"
+         font "gui/fonts/metron-bold48"
+         "size to text h" 1
+         "size to text v" 1
+        }
+        ButtonWidgetClass ButtonLeaveYes {
+         color 0 0.502 0.1255 1
+         size 0.256 0.165
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         text "Yes!"
+         font "gui/fonts/metron-bold48"
+        }
+        ButtonWidgetClass ButtonLeaveNo {
+         color 0.502 0 0 1
+         size 0.256 0.165
+         halign right_ref
+         valign bottom_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         style Colorable
+         text "No!"
+         font "gui/fonts/metron-bold48"
+        }
+       }
+      }
+      ButtonWidgetClass ButtonLeave {
+       visible 1
+       color 0.502 0 0 1
+       position 0.00366 0.82099
+       size 0.19536 0.059
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Colorable
+       text "#AB_Leave"
+       font "gui/fonts/metron-bold28"
+      }
+     }
+    }
+    PanelWidgetClass PanelNewClan {
+     visible 0
+     ignorepointer 1
+     position 0.002 0.144
+     size 0.997 0.851
+     hexactpos 0
+     vexactpos 0
+     hexactsize 0
+     vexactsize 0
+     {
+      TextWidgetClass TextWidget3 {
+       ignorepointer 1
+       position 0.27754 0.00743
+       size 0.44936 0.05737
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#AB_NewClanLine1"
+       font "gui/fonts/metron-bold28"
+       "size to text h" 1
+       "size to text v" 0
+      }
+      ButtonWidgetClass ButtonWidget1 {
+       color 0 0.502 0.1255 1
+       size 0.313 0.13
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style Colorable
+       text "#AB_YES"
+       font "gui/fonts/metron-bold58"
+      }
+      PanelWidgetClass PanelPrice {
+       visible 1
+       ignorepointer 1
+       position 0.01775 -0.34206
+       size 0.33976 0.068
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       {
+        TextWidgetClass TextWidgetPrice {
+         ignorepointer 1
+         position 0.00002 0.32043
+         size 0.98659 0.58251
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Price: 20.000"
+         font "gui/fonts/metron-bold28"
+         "text halign" center
+         "text valign" center
+        }
+       }
+      }
+      PanelWidgetClass PanelWidgetName {
+       visible 0
+       ignorepointer 1
+       color 0.1804 0.1804 0.1804 1
+       size 0.642 0.471
+       halign center_ref
+       valign center_ref
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       style rover_sim_colorable
+       {
+        TextWidgetClass TextHeadline {
+         ignorepointer 1
+         position 0.0137 0.09453
+         size 0.85109 0.08833
+         halign center_ref
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Please enter your Clan Name and Chat tag!"
+         font "gui/fonts/metron-bold28"
+        }
+        EditBoxWidgetClass EditBoxWidgetName {
+         position 0.25522 0.27545
+         size 0.48976 0.10456
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Clan Name"
+         font "gui/fonts/metron-bold58"
+        }
+        EditBoxWidgetClass EditBoxWidgetTag {
+         position 0.25522 0.44923
+         size 0.48976 0.14544
+         hexactpos 0
+         vexactpos 0
+         hexactsize 0
+         vexactsize 0
+         text "Clan Tag"
+         font "gui/fonts/metron-bold58"
+        }
+        ButtonWidgetClass ButtonWidgetCreate {
+         color 0 0.502 0.1255 1
+         position 188.12601 233.978
+         size 204.98399 62.348
+         hexactpos 1
+         vexactpos 1
+         hexactsize 1
+         vexactsize 1
+         style Colorable
+         text "Create!"
+         font "gui/fonts/metron-bold48"
+        }
+       }
+      }
+      TextWidgetClass TextWidget4 {
+       ignorepointer 1
+       position 0.28889 0.0677
+       size 0.43507 0.05737
+       hexactpos 0
+       vexactpos 0
+       hexactsize 0
+       vexactsize 0
+       text "#AB_NewClanLine2"
+       font "gui/fonts/metron-bold28"
+       "size to text h" 1
+      }
+     }
+    }
+   }
+  }
+ }
+}
